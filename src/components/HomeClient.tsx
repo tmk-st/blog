@@ -71,12 +71,12 @@ export default function HomeClient({ posts }: HomeClientProps) {
         <section className="py-20">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-16 items-start">
             <div>
-              <h1 className="text-5xl font-bold mb-5 relative inline-block whitespace-nowrap">
+              <h1 className="md:text-5xl text-3xl font-bold mb-5 relative inline-block whitespace-nowrap">
                 Hello World!!★★*:.。.
                 <span className="absolute -bottom-1 left-0 w-30 h-2 bg-[var(--accent)]"></span>
               </h1>
               <p className="text-lg text-[var(--text-secondary)] mb-10 leading-relaxed">
-                Web developer based in 東京
+                Web developer based in 東京.
               </p>
               <div className="flex gap-4 flex-wrap">
                 <a
@@ -100,7 +100,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
             <div
               className={`${
                 theme === "dark" && "hidden"
-              } relative w-full h-[300px] overflow-hidden`}
+              } relative w-full hidden md:block md:h-[300px] overflow-hidden`}
             >
               <Image
                 src={`${basePath}/img-1.jpeg`}
@@ -203,7 +203,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
         </section>
       </main>
 
-      <footer className="border-t-2 border-[var(--accent)] py-10 text-center text-sm text-[var(--text-secondary)] mt-20">
+      <footer className=" py-10 text-center text-sm text-[var(--text-secondary)] mt-20">
         <p>&copy; 2025 tmkst</p>
       </footer>
     </>
