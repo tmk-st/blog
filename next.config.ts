@@ -2,6 +2,7 @@
 const nextConfig = {
   output: "export",
   basePath: process.env.NODE_ENV === "production" ? "/blog" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/blog/" : undefined,
   // 画像最適化を無効化
   images: {
     unoptimized: true,
