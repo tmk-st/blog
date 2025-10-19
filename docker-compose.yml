@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-blog
+    ports:
+      - "3000:3000"
+    volumes:
+      # ホットリロード用にソースコードをマウント
+      - .:/app
+      # node_modulesは除外（コンテナ内のものを使用）
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
