@@ -9,6 +9,9 @@ const nextConfig = {
   },
   trailingSlash: true,
   devIndicators: false,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: process.env.NODE_ENV === "production" ? "/blog" : "",
+  },
   // 開発環境でのホットリロード設定（Docker用）
   ...(process.env.NODE_ENV === "development" && {
     webpackDevMiddleware: (config: {

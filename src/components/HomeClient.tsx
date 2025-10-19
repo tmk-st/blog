@@ -12,6 +12,8 @@ interface HomeClientProps {
 }
 
 export default function HomeClient({ posts }: HomeClientProps) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  
   const [theme, setTheme] = useState("light");
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -46,7 +48,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
           <div className="flex items-center gap-3">
             <div className="relative w-8 h-8 rounded-full overflow-hidden">
               <Image
-                src="/img-3.jpeg"
+                src={`${basePath}/img-2.jpeg`}
                 alt="アイコン"
                 width={32}
                 height={32}
@@ -101,7 +103,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
               } relative w-full h-[300px] overflow-hidden`}
             >
               <Image
-                src="/img-1.jpeg"
+                src={`${basePath}/img-1.jpeg`}
                 alt="アイコン"
                 fill
                 className="object-cover"
