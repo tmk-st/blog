@@ -13,7 +13,7 @@ interface HomeClientProps {
 
 export default function HomeClient({ posts }: HomeClientProps) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  
+
   const [theme, setTheme] = useState("light");
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -48,7 +48,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
           <div className="flex items-center gap-3">
             <div className="relative w-8 h-8 rounded-full overflow-hidden">
               <Image
-                src={`${basePath}/img-2.jpeg`}
+                src={`${basePath}/icon.jpeg`}
                 alt="アイコン"
                 width={32}
                 height={32}
@@ -69,46 +69,30 @@ export default function HomeClient({ posts }: HomeClientProps) {
       <main className="max-w-4xl mx-auto px-6">
         {/* 自己紹介セクション */}
         <section className="py-20">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-16 items-start">
-            <div>
-              <h1 className="md:text-5xl text-3xl font-bold mb-5 relative inline-block whitespace-nowrap">
-                Hello World!!★★*:.。.
-                <span className="absolute -bottom-1 left-0 w-30 h-2 bg-[var(--accent)]"></span>
-              </h1>
-              <p className="text-lg text-[var(--text-secondary)] mb-10 leading-relaxed">
-                Web developer based in 東京.
-              </p>
-              <div className="flex gap-4 flex-wrap">
-                <a
-                  href="https://zenn.dev/tmkst"
-                  className="px-5 py-2.5 rounded-full border border-[var(--border)] bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Zenn
-                </a>
-                <a
-                  href="https://bsky.app/profile/tmkst.bsky.social"
-                  className="px-5 py-2.5 rounded-full border border-[var(--border)] hover:bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Bluesky
-                </a>
-              </div>
-            </div>
-            <div
-              className={`${
-                theme === "dark" && "hidden"
-              } relative w-full hidden md:block md:h-[300px] overflow-hidden`}
+          <h1 className="md:text-5xl text-3xl font-bold mb-5 relative inline-block whitespace-nowrap">
+            Hello World!!★★*:.。.
+            <span className="absolute -bottom-1 left-0 w-30 h-2 bg-[var(--accent)]"></span>
+          </h1>
+          <p className="text-lg text-[var(--text-secondary)] mb-10 leading-relaxed">
+            Web developer based in 東京.
+          </p>
+          <div className="flex gap-4 flex-wrap">
+            <a
+              href="https://zenn.dev/tmkst"
+              className="px-5 py-2.5 rounded-full border border-[var(--border)] bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Image
-                src={`${basePath}/img-1.jpeg`}
-                alt="アイコン"
-                fill
-                className="object-cover"
-              />
-            </div>
+              Zenn
+            </a>
+            <a
+              href="https://bsky.app/profile/tmkst.bsky.social"
+              className="px-5 py-2.5 rounded-full border border-[var(--border)] hover:bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bluesky
+            </a>
           </div>
         </section>
 
