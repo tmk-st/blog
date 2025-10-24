@@ -1,5 +1,5 @@
 ---
-title: 'DynamoDBのGSI設計について
+title: 'DynamoDBのGSI設計について'
 date: '2025-10-24'
 excerpt: 'インデックスキー属性が存在しないアイテムはそのインデックスに登録されない'
 ---
