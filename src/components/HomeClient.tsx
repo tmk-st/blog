@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Post } from "@/lib/blog";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const POSTS_PER_PAGE = 5;
 
@@ -145,7 +146,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
                     disabled={currentPage === 1}
                     className="px-4 py-2 rounded-lg border border-[var(--border)] hover:bg-[var(--accent)] disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                   >
-                    前へ
+                    <ChevronLeft />
                   </button>
 
                   <div className="flex gap-2">
@@ -171,7 +172,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
                     disabled={currentPage === totalPages}
                     className="px-4 py-2 rounded-lg border border-[var(--border)] hover:bg-[var(--accent)] disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                   >
-                    次へ
+                    <ChevronRight />
                   </button>
                 </div>
               )}
@@ -187,7 +188,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
         </section>
       </main>
 
-      <footer className=" py-10 text-center text-sm text-[var(--text-secondary)] mt-20">
+      <footer className="pb-10 text-center text-sm text-[var(--text-secondary)] mt-20">
         <p>&copy; 2025 tmkst</p>
       </footer>
     </>
