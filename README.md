@@ -4,7 +4,7 @@
 
 ## Tech Stack
 
-- Next.js 14
+- Next.js
 - TypeScript
 - Tailwind CSS
 - Markdown
@@ -12,6 +12,4 @@
 
 ## Deployment
 
-GitHub Pages に自動デプロイされます。
-
-`main` ブランチへの push で自動的にデプロイが実行されます。
+`main`ブランチへのpushでGitHub Pagesに自動的にデプロイされます。
