@@ -120,9 +120,17 @@ export default function HomeClient({ posts }: HomeClientProps) {
                       <time className="text-[var(--text-secondary)]">
                         {post.date}
                       </time>
-                      <span className="px-3 py-1 rounded-full bg-[var(--accent)] text-xs font-medium">
-                        Blog
-                      </span>
+                      {post.tags && post.tags.length > 0 ? (
+                        post.tags.map((tag) => (
+                          <span key={tag} className="px-3 py-1 rounded-full bg-[var(--accent)] text-xs font-medium">
+                            {tag}
+                          </span>
+                        ))
+                      ) : (
+                        <span className="px-3 py-1 rounded-full bg-[var(--accent)] text-xs font-medium">
+                          Blog
+                        </span>
+                      )}
                     </div>
                     <h3 className="text-xl font-semibold mb-2 group-hover:text-[var(--text-primary)]">
                       <span className="group-hover:before:content-['→_'] group-hover:before:text-[var(--accent)]">

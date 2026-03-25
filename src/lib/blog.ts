@@ -11,6 +11,7 @@ export interface Post {
   title: string
   date: string
   excerpt?: string
+  tags?: string[]
 }
 
 export interface PostWithContent extends Post {
@@ -32,6 +33,7 @@ export function getAllPosts(): Post[] {
         title: data.title || 'Untitled',
         date: data.date || '',
         excerpt: data.excerpt || '',
+        tags: Array.isArray(data.tags) ? data.tags : data.tags ? [data.tags] : [],
       }
     })
   
@@ -53,6 +55,7 @@ export function getPostBySlug(slug: string): PostWithContent {
     title: data.title || 'Untitled',
     date: data.date || '',
     excerpt: data.excerpt || '',
+    tags: Array.isArray(data.tags) ? data.tags : data.tags ? [data.tags] : [],
     content: html,
   }
 }
