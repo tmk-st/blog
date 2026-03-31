@@ -36,12 +36,12 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       </header>
 
       <main className="max-w-3xl mx-auto px-6 py-12">
-        <nav className="flex items-center gap-2 text-sm text-[var(--text-secondary)] mb-8">
-          <Link href="/" className="hover:text-[var(--text-primary)]">
+        <nav className="flex items-center gap-2 text-xs text-[var(--text-tertiary)] mb-8">
+          <Link href="/" className="hover:text-[var(--text-secondary)]">
             Home
           </Link>
           <span>/</span>
-          <span className="text-[var(--text-primary)] truncate">{post.title}</span>
+          <span className="truncate">{post.title}</span>
         </nav>
 
         <article>
@@ -62,8 +62,13 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               </span>
             )}
           </div>
+          {post.excerpt && (
+            <p className="text-[var(--text-secondary)] text-base mt-4">
+              {post.excerpt}
+            </p>
+          )}
           <div
-            className="znc mt-12"
+            className="znc mt-16"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
