@@ -1,16 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: process.env.NODE_ENV === "production" ? "/blog" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/blog/" : undefined,
-  // 画像最適化を無効化
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
   devIndicators: false,
   env: {
-    NEXT_PUBLIC_BASE_PATH: process.env.NODE_ENV === "production" ? "/blog" : "",
+    NEXT_PUBLIC_BASE_PATH: "",
   },
   // 開発環境でのホットリロード設定（Docker用）
   ...(process.env.NODE_ENV === "development" && {
