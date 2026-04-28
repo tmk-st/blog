@@ -109,7 +109,7 @@ export default function WorksPage() {
                 <div className="relative w-48 h-32 flex-shrink-0 rounded-lg overflow-hidden bg-[var(--bg-secondary)] flex items-center justify-center">
                   {work.image ? (
                     <Image
-                      src={work.image}
+                      src={`${basePath}${work.image}`}
                       alt={work.name}
                       fill
                       className="object-cover"
