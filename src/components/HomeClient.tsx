@@ -78,22 +78,18 @@ export default function HomeClient({ posts }: HomeClientProps) {
             Web developer based in 東京.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <a
-              href="https://zenn.dev/tmkst"
+            <Link
+              href="/about"
               className="px-5 py-2.5 rounded-full border border-[var(--border)] bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              Zenn
-            </a>
-            <a
-              href="https://bsky.app/profile/tmkst.bsky.social"
+              About
+            </Link>
+            <Link
+              href="/works"
               className="px-5 py-2.5 rounded-full border border-[var(--border)] hover:bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              Bluesky
-            </a>
+              Works
+            </Link>
           </div>
         </section>
 
