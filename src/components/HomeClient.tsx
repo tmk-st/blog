@@ -193,7 +193,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
       </main>
 
       <footer className="pb-10 text-center text-sm text-[var(--text-secondary)] mt-20">
-        <p>&copy; 2025 tmkst</p>
+        <p>&copy; 2025- tmkst</p>
       </footer>
     </>
   );

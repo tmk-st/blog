@@ -96,7 +96,7 @@ export default function AboutPage() {
       </main>
 
       <footer className="pb-10 text-center text-sm text-[var(--text-secondary)]">
-        <p>&copy; 2025 tmkst</p>
+        <p>&copy; 2025- tmkst</p>
       </footer>
     </div>
   );

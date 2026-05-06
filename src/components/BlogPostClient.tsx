@@ -75,7 +75,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
       </main>
 
       <footer className="border-t-2 border-[var(--accent)] py-10 text-center text-sm text-[var(--text-secondary)] mt-20">
-        <p>&copy; 2025 tmkst</p>
+        <p>&copy; 2025- tmkst</p>
       </footer>
     </>
   );
