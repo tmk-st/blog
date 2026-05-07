@@ -12,4 +12,4 @@
 
 ## Deployment
 
-`main`ブランチへのpushでGitHub Pagesに自動的にデプロイされます。
+https://tmkst.com/ ★
