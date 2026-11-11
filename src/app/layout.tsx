@@ -3,7 +3,7 @@ import 'zenn-content-css'
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'tmkst - Web developer',
+  title: 'tmkst - Software Engineer',
   description: 'Personal Site',
 }
 
