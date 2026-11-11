@@ -59,25 +59,29 @@ export default function AboutPage() {
           </div>
           <div>
             <h1 className="text-3xl font-bold mb-1">tmkst</h1>
-            <p className="text-[var(--text-secondary)]">Web Developer</p>
+            <p className="text-[var(--text-secondary)]">Software Engineer</p>
           </div>
         </div>
 
         <section className="mb-12">
           <p className="text-lg leading-loose text-[var(--text-secondary)]">
-            <span className="block mb-2">Webエンジニア。フロントエンド、a11y、UI/UXが好きです。</span>
-            <span className="block">
-              最近はWebGL（three.js）に興味があります。Nomad Sculptで3Dモデリング勉強中。
-            </span>
-            <span className="block"></span>
+            Software Engineer / Overthinker
           </p>
         </section>
 
         <section>
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex gap-2 flex-wrap">
+            <a
+              href="https://www.linkedin.com/in/tmkst"
+              className="px-5 py-2.5 rounded-full border border-[var(--border)] bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
             <a
               href="https://bsky.app/profile/tmkst.bsky.social"
-              className="px-5 py-2.5 rounded-full border border-[var(--border)] bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
+              className="px-5 py-2.5 rounded-full border border-[var(--border)] hover:bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
               target="_blank"
               rel="noopener noreferrer"
             >

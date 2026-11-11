@@ -75,7 +75,7 @@ export default function HomeClient({ posts }: HomeClientProps) {
             <span className="absolute -bottom-1 left-0 w-30 h-2 bg-[var(--accent)]"></span>
           </h1>
           <p className="text-lg text-[var(--text-secondary)] mb-10 leading-relaxed">
-            Web developer based in 東京.
+            Software Engineer based in 東京.
           </p>
           <div className="flex gap-4 flex-wrap">
             <Link
@@ -83,12 +83,6 @@ export default function HomeClient({ posts }: HomeClientProps) {
               className="px-5 py-2.5 rounded-full border border-[var(--border)] bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
             >
               About
-            </Link>
-            <Link
-              href="/works"
-              className="px-5 py-2.5 rounded-full border border-[var(--border)] hover:bg-[var(--accent)] hover:transform hover:-translate-y-0.5 transition-all text-sm"
-            >
-              Works
             </Link>
           </div>
         </section>
